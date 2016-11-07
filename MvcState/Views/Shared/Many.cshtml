@@ -1,0 +1,26 @@
+﻿@model Dictionary<string, string>
+
+@{
+    Layout = "_Layout.cshtml";
+}
+
+<div class="panel panel-primary">
+    <div class="panel-heading">Configuration Data</div>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Property</th>
+            <th>Value</th>
+        </tr>
+        </thead>
+        <tbody>
+            @foreach (string key in Model.Keys)
+            {
+                <tr>
+                    <td>@key</td>
+                    <td>@Model[key]</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
