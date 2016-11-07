@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcState", "MvcState\MvcState.csproj", "{E8693C92-828A-4D40-BBBA-2CE831E2D2AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcCachingData", "MvcCachingData\MvcCachingData.csproj", "{E8693C92-828A-4D40-BBBA-2CE831E2D2AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
