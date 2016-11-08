@@ -117,8 +117,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\CacheController.cs" />
+    <Compile Include="Controllers\NoSlidingCacheController.cs" />
+    <Compile Include="Controllers\BasicCachingController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NoAbsoluteCacheController.cs" />
     <Compile Include="GlimpseSecurityPolicy.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -136,7 +138,9 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Shared\Many.cshtml" />
     <Content Include="Views\Shared\One.cshtml" />
-    <Content Include="Views\Cache\Index.cshtml" />
+    <Content Include="Views\BasicCaching\Index.cshtml" />
+    <Content Include="Views\NoSlidingCache\Index.cshtml" />
+    <Content Include="Views\NoAbsoluteCache\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -147,6 +151,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\SlidingCache\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

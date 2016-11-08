@@ -25,8 +25,12 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home-One", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Home-Many", "Many", "Home")</li>
+                    <!--<li>@Html.ActionLink("Home-One", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Home-Many", "Many", "Home")</li>-->
+                    <li><a href="~/Glimpse.axd">Glimpse</a></li>
+                    <li>@Html.ActionLink("Basic", "Index", "BasicCaching")</li>
+                    <li>@Html.ActionLink("NoSlidingExpiration", "Index", "NoSlidingCache")</li>
+                    <li>@Html.ActionLink("NoAbsoluteExpiration", "Index", "NoAbsoluteCache")</li>
                 </ul>
             </div>
         </div>

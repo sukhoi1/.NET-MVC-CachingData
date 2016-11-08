@@ -1,0 +1,22 @@
+﻿@using System.Web.Mvc.Html
+@model long?
+
+@{
+    Layout = "../Shared/_Layout.cshtml";
+}
+
+<div class="alert alert-info">
+    @if (Model.HasValue)
+    {
+        @: Cached Data: @Model bytes
+    }
+    else
+    {
+        @: No Cached Data
+    }
+</div>
+
+@using (Html.BeginForm("PopulateCache", "BasicCaching"))
+{
+    <button class="btn btn-primary">Populate Cache</button>
+}

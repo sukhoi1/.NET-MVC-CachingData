@@ -1,3 +1,5 @@
 packages/
 MvcState/bin/
 MvcState/obj/
+MvcCachingData/bin/
+MvcCachingData/obj/

@@ -4,7 +4,7 @@ using System.Web.Mvc;
 
 namespace MvcState.Controllers
 {
-    public class CacheController : Controller
+    public class BasicCachingController : Controller
     {
         public ActionResult Index()
         {
