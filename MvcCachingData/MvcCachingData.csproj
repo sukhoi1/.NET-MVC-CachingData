@@ -118,6 +118,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\NotificationsAfterController.cs" />
     <Compile Include="Controllers\AggregateController.cs" />
     <Compile Include="Controllers\AnotherCachedController.cs" />
     <Compile Include="Controllers\CustomDependencyController.cs" />
@@ -151,6 +152,7 @@
     <Content Include="Views\AnotherCached\Index.cshtml" />
     <Content Include="Views\CustomDependency\Index.cshtml" />
     <Content Include="Views\Aggregate\Index.cshtml" />
+    <Content Include="Views\NotificationsAfter\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
