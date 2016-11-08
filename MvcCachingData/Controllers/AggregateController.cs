@@ -1,11 +1,12 @@
 ﻿using System.Net.Http;
 using System.Threading.Tasks;
+using System.Web.Caching;
 using System.Web.Mvc;
 using MvcState.Infrastructure;
 
 namespace MvcState.Controllers
 {
-    public class CustomDependencyController : Controller
+    public class AggregateController : Controller
     {
         public ActionResult Index()
         {
@@ -19,8 +20,13 @@ namespace MvcState.Controllers
         {
             HttpResponseMessage result = await new HttpClient().GetAsync("http://apress.com");
             long? data = result.Content.Headers.ContentLength;
+
             SelfExpiringData<long?> seData = new SelfExpiringData<long?>(data, 3);
-            HttpContext.Cache.Insert("pageLength", seData, seData);
+            CacheDependency fileDep = new CacheDependency(Request.MapPath("~/data.txt"));
+            AggregateCacheDependency aggDep = new AggregateCacheDependency();
+            aggDep.Add(seData, fileDep);
+            HttpContext.Cache.Insert("pageLength", seData, aggDep);
+
             return RedirectToAction("Index");
         }
     }
