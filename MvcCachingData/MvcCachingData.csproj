@@ -105,6 +105,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="data.txt" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
@@ -117,6 +118,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\FileDependencyController.cs" />
     <Compile Include="Controllers\NoSlidingCacheController.cs" />
     <Compile Include="Controllers\BasicCachingController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -141,6 +143,7 @@
     <Content Include="Views\BasicCaching\Index.cshtml" />
     <Content Include="Views\NoSlidingCache\Index.cshtml" />
     <Content Include="Views\NoAbsoluteCache\Index.cshtml" />
+    <Content Include="Views\FileDependency\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
