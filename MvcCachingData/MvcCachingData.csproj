@@ -119,6 +119,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AnotherCachedController.cs" />
+    <Compile Include="Controllers\CustomDependencyController.cs" />
     <Compile Include="Controllers\FileDependencyController.cs" />
     <Compile Include="Controllers\NoSlidingCacheController.cs" />
     <Compile Include="Controllers\BasicCachingController.cs" />
@@ -128,6 +129,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\SelfExpiringData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -146,6 +148,7 @@
     <Content Include="Views\NoAbsoluteCache\Index.cshtml" />
     <Content Include="Views\FileDependency\Index.cshtml" />
     <Content Include="Views\AnotherCached\Index.cshtml" />
+    <Content Include="Views\CustomDependency\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
